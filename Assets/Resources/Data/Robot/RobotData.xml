@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Atwood Deng</Author>
+  <LastAuthor>Atwood Deng</LastAuthor>
+  <Created>2015-11-09T18:51:27Z</Created>
+  <LastSaved>2015-12-22T03:48:31Z</LastSaved>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10360</WindowHeight>
+  <WindowWidth>22500</WindowWidth>
+  <WindowTopX>2400</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Interior ss:Color="#A2BD90" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Interior ss:Color="#A2BD90" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFCC00" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#A2BD90" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#A2BD90" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Body">
+  <Table ss:ExpandedColumnCount="18" ss:ExpandedRowCount="9" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Span="6"/>
+   <Column ss:Index="8" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="169"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Span="7"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">CreateTime</Data></Cell>
+    <Cell><Data ss:Type="String">Health</Data></Cell>
+    <Cell><Data ss:Type="String">MoveSpeed</Data></Cell>
+    <Cell><Data ss:Type="String">TurnAngleSpeed</Data></Cell>
+    <Cell><Data ss:Type="String">Armor</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Power</Data></Cell>
+    <Cell><Data ss:Type="String">Special</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PNumber</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PPercentage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PTime</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PDamage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PRange</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Parameter1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Parameter2</Data></Cell>
+    <Cell><Data ss:Type="String">EquipmentI</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">EquipmentII</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">EquipmentIII</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BasicBody</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">115</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Weapon</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">StrongBody</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">armor+PP</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Weapon</Data></Cell>
+    <Cell><Data ss:Type="String">Armor</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">QuickBody</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">damage+PP, speed+P1</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.15</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.15</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Weapon</Data></Cell>
+    <Cell ss:Index="18"><Data ss:Type="String">Pusher</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">FightBody</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">165</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Damage+PP, when enter battlefield, randomly shoot PN enemy</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">0.33</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ScoutBody</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Equipment Range +PR</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">WitcherBody</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">215</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Power recover PP when kill an enermy</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">GeneralBody</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">265</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Armor+PP,damage+PD when kill an enermy</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">TestBody</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="16"><Data ss:Type="String">Weapon</Data></Cell>
+    <Cell><Data ss:Type="String">Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Pusher</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <LeftColumnVisible>4</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>9</ActiveRow>
+     <ActiveCol>15</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Weapon">
+  <Table ss:ExpandedColumnCount="19" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="88"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Span="1"/>
+   <Column ss:Index="4" ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="49"
+    ss:Span="1"/>
+   <Column ss:Index="6" ss:StyleID="s64" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Span="1"/>
+   <Column ss:Index="9" ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="43"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="92"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0" ss:Width="254"/>
+   <Column ss:StyleID="s70" ss:AutoFitWidth="0"/>
+   <Column ss:AutoFitWidth="0" ss:Width="90"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">CreateTime</Data></Cell>
+    <Cell><Data ss:Type="String">ShootCoolDown</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+    <Cell><Data ss:Type="String">DPS</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">DamageType</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">ShootSpeed</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Range</Data></Cell>
+    <Cell><Data ss:Type="String">PowerCost</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">BulletName</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Special</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PNumber</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PPercentage</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">PTime</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">PDamage</Data></Cell>
+    <Cell><Data ss:Type="String">PRange</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter1</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter2</Data></Cell>
+    <Cell><Data ss:Type="String">Info</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">BasicGun</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s72" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Fire</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4.5</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">BasicBullet</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">LaserGun</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.65</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s72" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">16.923076923076923</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Light</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">StraightLight</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">对直线上的敌人造成伤害</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">ShortGun</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">1.2</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.14000000000000001</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s72" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">57.142857142857139</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Fire</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">0.6</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3.3</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">BasicBullet</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">短射程快射击速度</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">IceGun</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">1.8</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.8</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s72" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">21.25</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Fire</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.35</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">IceBullet</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">敌人造成P1的减速和PP的减攻速，持续PT秒</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell><Data ss:Type="Number">0.33</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Index="17" ss:StyleID="s72"><Data ss:Type="Number">0.5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">MagicBallGun</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">1.2</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.35</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s72" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">28.571428571428573</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Magic</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">4.5</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">MagicBall</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">额外发射PN个魔法</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FireBallGun</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.66</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">33.333333333333329</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Magic</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.16</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">FireBall</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">对直线上敌人造成伤害，范围PR.额外附加PT秒的每秒PD的灼烧伤害</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:Index="14"><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">SmartGun</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">4.5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.8</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">41.25</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Light</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">7.5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">SmartBullet</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">对范围内随机敌人造成伤害，若该敌人的目标不是你，则造成PP的额外伤害</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ReflectLaserGun</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">4.5</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">45.714285714285715</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Light</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">ReflectLight</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">弹射到附近PN个敌人，每次弹射减少PP的伤害</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.33</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell ss:StyleID="s74"><Data ss:Type="String">BombProjector</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s74" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">53.333333333333329</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">Fire</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.35</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">Bomb</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">对范围P1的敌人造成P2的伤害</Data></Cell>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:Index="16" ss:StyleID="s74"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s78">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SKYGun</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">0.12</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s76" ss:Formula="=RC[-1]/RC[-2]"><Data ss:Type="Number">83.333333333333343</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Fire</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">0.35</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">SKYBullet</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">发射PN个导弹，目标为地方任意单位，每个导弹造成PD伤害</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="15"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <RangeSelection>R2C1:R11C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Pusher">
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Span="11"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">CreateTime</Data></Cell>
+    <Cell><Data ss:Type="String">MoveSpeed</Data></Cell>
+    <Cell><Data ss:Type="String">TurnAngleSpeed</Data></Cell>
+    <Cell><Data ss:Type="String">Special</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PNumber</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PPercentage</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PTime</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PDamage</Data></Cell>
+    <Cell><Data ss:Type="String">PRange</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter1</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">BasicPusher</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.2000000000000002</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.2</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">QuickPusher</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Health-PP</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.15</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">JumpPusher</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">进入战场时获得PP的速度加成，加成缓慢减少，在PT秒后降为0</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Armor">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="5" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">CreateTime</Data></Cell>
+    <Cell><Data ss:Type="String">Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Special</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PNumber</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">PPercentage</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">PTime</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">PDamage</Data></Cell>
+    <Cell><Data ss:Type="String">PRange</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter1</Data></Cell>
+    <Cell><Data ss:Type="String">Parameter2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell><Data ss:Type="String">BasicArmor</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell><Data ss:Type="String">LightArmor</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Speed+PP</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell><Data ss:Type="String">HeavyArmor</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Fire的伤害减少PP</Data></Cell>
+    <Cell ss:Index="6"><Data ss:Type="Number">0.2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s69">
+    <Cell><Data ss:Type="String">RedArmor</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">伤害减少PD</Data></Cell>
+    <Cell ss:Index="8"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>-4</HorizontalResolution>
+    <VerticalResolution>-4</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="ArmorDamage">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="26" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Armor</Data></Cell>
+    <Cell><Data ss:Type="String">Damage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">3.8461538461538547E-2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">7.4074074074074181E-2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.10714285714285721</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.13793103448275856</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.16666666666666663</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.19354838709677413</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.21875</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.24242424242424243</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.26470588235294112</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.2857142857142857</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.30555555555555558</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.32432432432432434</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.34210526315789469</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.35897435897435903</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.375</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.3902439024390244</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.40476190476190477</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.41860465116279066</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.43181818181818177</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.44444444444444442</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.4565217391304347</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.46808510638297873</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.47916666666666663</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.48979591836734693</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:Formula="=1- 1 / ( 1 +0.04*RC[-1])"><Data ss:Type="Number">0.5</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>24</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

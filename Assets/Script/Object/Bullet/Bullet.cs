@@ -7,31 +7,30 @@ public class Bullet : MonoBehaviour {
 	public Damage damage{
 		get {return _damage;}
 	}
-	Damage _damage;
+	[SerializeField]Damage _damage;
 
 	public TeamColor teamColor{
 		get {return _teamColor;}
 	}
-	TeamColor _teamColor = TeamColor.None;
+	[SerializeField]TeamColor _teamColor = TeamColor.None;
 
 	Rigidbody _rigidbody;
 
-	void Awake()
-	{	
-		Init();
+	virtual public void Init(Weapon weapon, Damage dmg  , Transform target = null)
+	{
+		BasicInit(weapon,dmg,target);
+		Shoot(target,weapon.weaponParameter.ShootSpeed);
 	}
 
-	virtual public void Init(TeamColor teamColor = TeamColor.None , Damage dmg = new Damage() , Vector3 toward = new Vector3() , float speed = 0 )
+	protected void BasicInit(Weapon weapon = null , Damage dmg = null, Transform target = null )
 	{
 		gameObject.tag = Global.BULLET_TAG;
 		_damage = dmg;
+		_teamColor = weapon.robot.teamColor;
 
 		if ( _rigidbody == null )
 			_rigidbody = GetComponent<Rigidbody>();
-
-		Shoot(toward,speed);
 	}
-
 
 
 	void OnTriggerEnter(Collider col)
@@ -50,7 +49,7 @@ public class Bullet : MonoBehaviour {
 	{
 		Assert.IsNotNull<Robot>(robot);
 		Assert.IsTrue(robot.teamColor != teamColor);
-		robot.CauseDamage(_damage);
+		robot.RecieveDamage(damage);
 
 		SelfDestory();
 	}
@@ -62,16 +61,25 @@ public class Bullet : MonoBehaviour {
 
 	Vector3 toward;
 	float speed;
-	public void Shoot(Vector3 _toward , float _speed)
+	virtual public void Shoot(Transform target , float _speed)
 	{
-		toward = _toward.normalized;
+		if ( target == null)
+			toward = Vector3.left;
+		else
+			toward = (target.position - transform.position).normalized;
+
 		speed = _speed;
 
-		transform.LookAt(transform.position+_toward);
+		transform.LookAt(transform.position+toward);
+	}
+
+	virtual public void UpdateBullet()
+	{
+		transform.position += toward.normalized * speed;
 	}
 
 	void Update()
 	{
-		transform.position += toward.normalized * speed;
+		UpdateBullet();
 	}
 }

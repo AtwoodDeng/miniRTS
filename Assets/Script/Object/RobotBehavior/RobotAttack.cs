@@ -5,18 +5,23 @@ public class RobotAttack : RobotBehavior {
 
 	 // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
 	override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		_robot.AttackBegin();
-		_robot.GetComponent<Rigidbody>().velocity = Vector3.zero;
+
 	}
 
 	// OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
 	override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-		Debug.Log(_robot.name + " attacking" );
+		// Debug.Log(_robot.name + " attacking" );
 		_robot.AttackUpdate();
 		if ( _robot.isDestory)
 		{
 			animator.SetBool(UnityAnimationConstants.Robot.Parameters.isDead, true);
 		}
+		if ( !_robot.isMeetEnemy )
+		{
+			animator.SetBool(UnityAnimationConstants.Robot.Parameters.isAttack, false);
+		}
+		if ( !_robot.canAttack )
+			animator.SetBool(UnityAnimationConstants.Robot.Parameters.canAttack, false);
 	}
 
 	// OnStateExit is called when a transition ends and the state machine finishes evaluating this state

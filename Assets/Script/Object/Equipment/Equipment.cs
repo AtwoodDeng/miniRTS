@@ -1,13 +1,12 @@
 using UnityEngine;
 using System.Collections;
-using System.Data;
 
 public class Equipment : MonoBehaviour {
 
 	// [System.Serializable]
 	// public struct EquipmentParameter
 	// {
-	// 	float cost;
+	// 	float CreateTime;
 	// }
 
 	// public EquipmentParameter equipmentParameter;
@@ -20,6 +19,9 @@ public class Equipment : MonoBehaviour {
 	}
 
 	public Type type;
+	public bool isInit = false;
+
+	public Robot robot;
 
 	public virtual void AttackBegin(Robot _robot){}
 
@@ -29,9 +31,14 @@ public class Equipment : MonoBehaviour {
 
 	public virtual Damage RecieveDamage(Damage dmg){return dmg;}
 
+	public virtual void InitParameterI(ref Robot.BodyParameter _parameter){}
+
+	public virtual void InitParameterII(ref Robot.BodyParameter _parameter){}
+
 	public virtual void Init(DataRow data , Robot _robot)
 	{	
-
+		isInit = true;
+		robot = _robot;
 	}
 
 
@@ -58,6 +65,8 @@ public class EquipmentFactory
 
 	public static string NameToPath(string equipmentName)
 	{
+		if (equipmentName == "" || equipmentName == "None" )
+			return Global.ROBOT_PREFAB_PATH + "/Empty";
 		for (int i = 0 ; i < 4 ; ++ i )
 		{
 			Global.DataTableType type = (Global.DataTableType) i ;
@@ -68,20 +77,24 @@ public class EquipmentFactory
 		return "";
 	}
 
-
-
 	public static Equipment  CreateEquipment(string equipmentName, Robot robot,  EquipmentCreatePosition pos){
 		
-		Debug.Log("create equipment");
-
 		string path = NameToPath(equipmentName);
+		Debug.Log("create equipment" + equipmentName + " " + path.ToString());
 		if (path == "" )
 		{
 			Debug.LogError("Cannnot find prefab path");
 			return null;
 		}
 
-		GameObject equipment = GameObject.Instantiate( Resources.Load(path) as GameObject) as GameObject;
+		GameObject prefab = Resources.Load(path) as GameObject;
+		if (prefab == null )
+		{
+			Debug.LogError("Cannnot find prefab");
+			return null;
+		}
+
+		GameObject equipment = GameObject.Instantiate(prefab ) as GameObject;
 		if (equipment == null )
 		{
 			Debug.LogError("Cannot found prefab" + equipmentName);
